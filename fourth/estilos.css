@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: monospace;
+    position: relative;
+    color: #ff0000;
+    background-color: #F5FFFA;
+}
+
+/*
+aqui ponemos .image ya que en img class="image" y así ya ligamos el diseño con
+el codigo que queremos en nuestro index.html
+*/
+.imagen1{
+    border:10px;
+    border-color:#FFD133;
+    border-style:solid
+}
