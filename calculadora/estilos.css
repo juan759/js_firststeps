@@ -1,0 +1,53 @@
+*{
+    padding: 10px;
+    border: 1px;
+}
+
+body{
+    font-family: monospace;
+    position: relative;
+    color: #3163AB;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#33B80F,#0FB3B8)
+}
+
+.calculadora_chida{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+
+.calculadora_chida > table > tr > button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output.display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+
+.calculadora_chida > table > tr > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
