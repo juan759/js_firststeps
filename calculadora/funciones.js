@@ -8,6 +8,7 @@ result = document.getElementById('result')
 opActual = '';
 opAnterior = '';
 operacion = undefined;
+resAnterior = undefined;
 
 botonNumeros.forEach(function(boton) {
     boton.addEventListener('click',function(){
@@ -34,6 +35,7 @@ botonEdicion.forEach(function(boton){
 
 botonAns.addEventListener('click',function(){
     escribeAns()
+    calcular()
 })
 
 botonClear.addEventListener('click',function(){
@@ -83,6 +85,7 @@ function calcular() {
     opActual = calculo;
     operacion = undefined;
     opAnterior = ''
+    resAnterior = calculo;
 }
 function actualizarDisp() {
     result.value = opActual;
@@ -101,6 +104,14 @@ function edita(op){
         }
     }
 }*/
+
+function escribeAns() {
+    if(opAnterior == ''){
+        return;
+    }else{
+        opActual = resAnterior
+    }
+}
 
 function clear() {
     opActual = '';
